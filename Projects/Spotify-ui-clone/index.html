@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spotify - Web Player: Music for everyone</title>
+
+  <link rel="icon" href="./assets/logo.png" />
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Top Navigation -->
+  <div class="navigation">
+    <div class="global-nav-bar">
+      <div class="spotify-icon">
+        <i class="fa-brands fa-spotify"></i>
+      </div>
+
+      <div class="home-search">
+        <button class="home-btn">
+          <i class="fa-solid fa-house"></i>
+        </button>
+
+        <div class="search-bar">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="What do you want to play?" />
+          <span class="divider">|</span>
+          <img src="./assets/library_icon.png" alt="Library" />
+        </div>
+      </div>
+
+      <div class="profile-section">
+        <button class="premium-btn">Explore Premium</button>
+        <button class="install-btn">
+          <i class="fa-regular fa-circle-down"></i> Install App
+        </button>
+        <button class="icon-btn">
+          <i class="fa-solid fa-bell"></i>
+        </button>
+        <button class="icon-btn">
+          <i class="fa-solid fa-user-group"></i>
+        </button>
+        <button class="icon-btn">
+          <i class="fa-solid fa-user"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Layout -->
+  <div class="main">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <div class="library">
+        <div class="options">
+          <a href="#">Your Library</a>
+          <button class="create-badge">
+            <i class="fa-solid fa-plus"></i> Create
+          </button>
+        </div>
+
+        <div class="lib-box">
+          <div class="box">
+            <p class="box-p1">Create your first playlist</p>
+            <p class="box-p2">It's easy, we'll help you</p>
+            <button class="badge">Create Playlist</button>
+          </div>
+
+          <div class="box">
+            <p class="box-p1">Let's find some podcasts to follow</p>
+            <p class="box-p2">We'll keep you updated on new episodes</p>
+            <button class="badge">Browse podcasts</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="sticky-nav">
+            <div>
+                <button class="nav-btn">All</button>
+            </div>
+            <div>
+                <button class="nav-btn">Music</button>
+            </div>
+            <div>
+                <button class="nav-btn">Podcasts</button>
+            </div>
+        </div>
+
+        <h2>Recently Played</h2>
+        <div class="cards-container">
+          <div class="card">
+            <img src="./assets/card1img.jpeg" class="card-img" />
+            <p class="card-title">Top 50 - Golbal</p>
+            <p class="card-info"> Your daily updates of the most played tracks</track></p>
+          </div>
+        </div>
+         <h2>Trending now near you</h2>
+          <div class="cards-container">
+          <div class="card">
+            <img src="./assets/card2img.jpeg" class="card-img" />
+            <p class="card-title">Top 50 - Golbal</p>
+            <p class="card-info"> Your daily updates of the most played tracks</track></p>
+          </div>
+
+          <div class="card">
+            <img src="./assets/card3img.jpeg" class="card-img" />
+            <p class="card-title">Top 50 - Golbal</p>
+            <p class="card-info"> Your daily updates of the most played tracks</track></p>
+          </div>
+
+          <div class="card">
+            <img src="./assets/card4img.jpeg" class="card-img" />
+            <p class="card-title">Top 50 - Golbal</p>
+            <p class="card-info"> Your daily updates of the most played tracks</track></p>
+          </div>
+          </div>
+
+        <h2>Featured Charts</h2>
+        <div class="cards-container">
+          <div class="card">
+            <img src="./assets/card5img.jpeg" class="card-img" />
+            <p class="card-title">Top 50 - Golbal</p>
+            <p class="card-info"> Your daily updates of the most played tracks</track></p>
+          </div>
+
+          <div class="card">
+            <img src="./assets/card6img.jpeg" class="card-img" />
+            <p class="card-title">Top Songs - India</p>
+            <p class="card-info"> Your daily updates of the most played tracks</track></p>
+          </div>
+
+          <div class="card">
+            <img src="./assets/card1img.jpeg" class="card-img" />
+            <p class="card-title">Top 50 - Golbal</p>
+            <p class="card-info"> Your daily updates of the most played tracks</track></p>
+          </div>
+        </div>
+        <div class="footer">
+          <div class="line">
+
+          </div>
+        </div>
+  </div>
+
+  <!-- Music Player -->
+<div class="music-player">
+  <!-- LEFT -->
+  <div class="music-bar-left">
+    <img src="./assets/album_picture.jpeg" alt="album" class="album-img" />
+
+    <div class="music-info">
+      <span class="song-name">Daylight</span>
+      <span class="artist-name">David Kumar</span>
+    </div>
+
+    <button class="icon-btn ghost">
+      <i class="fa-regular fa-heart"></i>
+    </button>
+  </div>
+
+  <!-- CENTER -->
+  <div class="music-bar-center">
+    <div class="player-controls">
+      <button class="icon-btn ghost"><i class="fa-solid fa-shuffle"></i></button>
+      <button class="icon-btn ghost"><i class="fa-solid fa-backward-step"></i></button>
+      <button class="icon-btn play-btn"><i class="fa-solid fa-play"></i></button>
+      <button class="icon-btn ghost"><i class="fa-solid fa-forward-step"></i></button>
+      <button class="icon-btn ghost"><i class="fa-solid fa-repeat"></i></button>
+    </div>
+
+    <div class="progress-container">
+      <span class="time">0:18</span>
+      <div class="progress-bar">
+        <div class="progress-filled"></div>
+      </div>
+      <span class="time">3:37</span>
+    </div>
+  </div>
+
+  <!-- RIGHT -->
+  <div class="music-bar-right">
+    <button class="icon-btn ghost"><i class="fa-solid fa-microphone"></i></button>
+    <button class="icon-btn ghost"><i class="fa-solid fa-list"></i></button>
+    <button class="icon-btn ghost"><i class="fa-solid fa-users-rectangle"></i></button>
+
+    <div class="volume-control">
+       <button class="icon-btn ghost"><i class="fa-solid fa-volume-high"></i></button>
+          <label for="volume" class="vol"></label>
+          <input type="range" name="volume" id="volume" min="0" max="100" value="50">
+      <button class="icon-btn ghost"><i class="fa-solid fa-expand"></i></button>
+    </div>
+  </div>
+</div>
