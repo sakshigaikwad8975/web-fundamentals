@@ -8,3 +8,18 @@ if (num%2 ===0) {
 else{
     console.log(`${num} is not an even number.`)
 }
+
+// Q2: Largest of Three Numbers
+// Given three numbers a, b, and c, write a program to find and print the largest number.
+
+let a = 4;
+let b = 7;
+let c = 1;
+if (a>b && a>c) {
+    console.log(`${a} is largest number.`)
+} 
+else if (b>a && b>c) {
+    console.log(`${b} is largest number.`)
+} else {
+    console.log(`${c} is the largest number.`)
+}
